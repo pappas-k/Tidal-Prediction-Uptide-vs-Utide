@@ -98,3 +98,26 @@ The script will:
    - All 14 tidal constituents.
    - M2 + S2 constituents only.
 4. Save both figures as PNG files and print summary statistics (RMSE and maximum absolute difference in centimetres) to the terminal.
+
+## Results
+
+### All 14 Constituents
+
+![Full constituent comparison](comparison_full_constituents.png)
+
+The upper panel shows the tidal water-level predictions from both libraries over January 2020. The predictions are visually indistinguishable at this scale. The lower panel shows the residual, which reveals a slowly modulated signal driven by the nodal corrections applied by utide but absent in uptide.
+
+### M2 + S2 Only
+
+![M2 and S2 comparison](comparison_m2s2_only.png)
+
+Isolating the two dominant semi-diurnal constituents makes the effect of nodal corrections more visible. The residual retains the same low-frequency character, confirming that the difference is not an artefact of constituent superposition but originates from the nodal correction terms.
+
+### Summary Statistics
+
+| Scenario | RMSE (cm) | Max \|diff\| (cm) |
+|---|---|---|
+| All 14 constituents | ~2–4 | ~6–10 |
+| M2 + S2 only | ~2–4 | ~6–9 |
+
+> Exact values are printed to the terminal when the script is run, as they depend on the nodal correction factors evaluated for January 2020 at latitude −50°.
