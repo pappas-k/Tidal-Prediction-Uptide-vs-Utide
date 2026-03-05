@@ -81,3 +81,20 @@ git clone git@github.com:pappas-k/Tidal-Prediction-Uptide-vs-Utide.git
 cd Tidal-Prediction-Uptide-vs-Utide
 pip install numpy pandas matplotlib utide uptide
 ```
+
+## Usage
+
+Run the main script directly:
+
+```bash
+python uptide_vs_utide.py
+```
+
+The script will:
+
+1. Build a utide-compatible coefficient structure from the hard-coded Patagonia constituent data.
+2. Reconstruct the tidal signal for January 2020 at 10-minute intervals using both **utide** and **uptide**.
+3. Compute and plot the residual (UTide − uptide) for two scenarios:
+   - All 14 tidal constituents.
+   - M2 + S2 constituents only.
+4. Save both figures as PNG files and print summary statistics (RMSE and maximum absolute difference in centimetres) to the terminal.
