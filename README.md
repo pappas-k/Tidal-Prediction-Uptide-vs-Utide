@@ -22,6 +22,18 @@ Tidal prediction via harmonic analysis expresses sea-surface elevation as a supe
 
 where `σ_i` is the angular frequency, `V_i` is the astronomical argument, and `f_i`, `u_i` are nodal correction factors that account for the 18.6-year lunar nodal cycle.
 
+## Libraries
+
+### utide
+
+[utide](https://github.com/westernmagic/utide) is a Python port of the MATLAB UTide toolbox (Codiga, 2011). It provides a full harmonic analysis and reconstruction workflow with built-in support for nodal corrections, Greenwich phase conventions, and confidence-interval estimation. It expects time as **matplotlib datenums** and phases as **Greenwich phase lags in degrees**.
+
+### uptide
+
+[uptide](https://github.com/stephankraabel/uptide) is a lightweight Python library designed for straightforward tidal prediction in ocean modelling workflows. It expects elapsed time in **seconds from a user-defined reference epoch** and phases in **radians**, interpreted as local phases at *t = 0*, without applying nodal corrections.
+
+---
+
 ### Study Site
 
 Constituent data were extracted from a macro-tidal location in **Patagonia, Argentina** (approximate latitude −50°). The site is dominated by the M2 semi-diurnal constituent (amplitude ≈ 2.86 m), making it a demanding test case for tidal prediction software. Predictions span **January 2020** at a 10-minute interval.
