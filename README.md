@@ -120,10 +120,10 @@ Isolating the two dominant semi-diurnal constituents makes the effect of nodal c
 
 | Scenario | RMSE (cm) | Max \|diff\| (cm) |
 |---|---|---|
-| All 14 constituents | ~2–4 | ~6–10 |
-| M2 + S2 only | ~2–4 | ~6–9 |
+| All 14 constituents | 1.2025 | 2.7518 |
+| M2 + S2 only | 0.6011 | 0.9591 |
 
-> Exact values are printed to the terminal when the script is run, as they depend on the nodal correction factors evaluated for January 2020 at latitude −50°.
+Values computed for January 2020 at 10-minute intervals, latitude −50°.
 
 ## Notes on Conventions
 
