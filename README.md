@@ -32,6 +32,19 @@ where `σ_i` is the angular frequency, `V_i` is the astronomical argument, and `
 
 [uptide](https://github.com/stephankraabel/uptide) is a lightweight Python library designed for straightforward tidal prediction in ocean modelling workflows. It expects elapsed time in **seconds from a user-defined reference epoch** and phases in **radians**, interpreted as local phases at *t = 0*, without applying nodal corrections.
 
+### Key Differences
+
+| Feature | utide | uptide |
+|---|---|---|
+| Time input | Matplotlib datenums | Elapsed seconds from reference epoch |
+| Phase convention | Greenwich phase lag (degrees) | Local phase at *t = 0* (radians) |
+| Nodal corrections | Yes (`f`, `u`, `V` factors) | No |
+| Latitude required | Yes (for nodal corrections) | No |
+| Mean & trend | Supported | Not supported |
+| Typical use case | Harmonic analysis & reconstruction | Ocean model boundary forcing |
+
+Because of these differences, predictions from the two libraries given the same amplitude and phase inputs are **not expected to be identical**. The residual is physically meaningful and reflects the nodal correction terms applied by utide.
+
 ---
 
 ### Study Site
