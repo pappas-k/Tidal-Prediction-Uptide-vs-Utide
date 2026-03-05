@@ -60,3 +60,24 @@ Constituent data were extracted from a macro-tidal location in **Patagonia, Arge
 ├── comparison_m2s2_only.png          # Figure: M2 + S2 only
 └── README.md
 ```
+
+## Requirements
+
+| Package | Tested version | Purpose |
+|---|---|---|
+| Python | ≥ 3.8 | Runtime |
+| numpy | ≥ 1.21 | Array operations |
+| pandas | ≥ 1.3 | Constituent data filtering |
+| matplotlib | ≥ 3.4 | Plotting and datenum conversion |
+| utide | ≥ 0.3 | Tidal reconstruction with nodal corrections |
+| uptide | ≥ 1.3 | Lightweight tidal prediction |
+
+## Installation
+
+Clone the repository and install the dependencies:
+
+```bash
+git clone git@github.com:pappas-k/Tidal-Prediction-Uptide-vs-Utide.git
+cd Tidal-Prediction-Uptide-vs-Utide
+pip install numpy pandas matplotlib utide uptide
+```
