@@ -131,11 +131,13 @@ When comparing or converting between the two libraries, keep the following in mi
 - **Time input**: utide accepts Python `datetime` objects (converted internally to Gregorian datenums). uptide requires elapsed seconds from a user-specified reference datetime set via `set_initial_time()`.
 - **Latitude**: utide requires a latitude for computing nodal corrections. For the Patagonia site, `lat = −50°` is used.
 
+<!--
 ## License
 
 This project is released under the [MIT License](https://opensource.org/licenses/MIT).
+-->
 
 ## References
 
-- Codiga, D.L. (2011). *Unified Tidal Analysis and Prediction Using the UTide Matlab Functions*. Technical Report 2011-01. Graduate School of Oceanography, University of Rhode Island.
-- Kráál, S. *uptide* Python package. Available at: https://github.com/stephankraabel/uptide
+- Bowman, Wesley. *UTide* Python package. Available at: https://github.com/wesleybowman/UTide
+- Kramer, Stephan. *uptide* Python package. Available at:  https://github.com/stephankraabel/uptide](https://github.com/stephankramer/uptide
