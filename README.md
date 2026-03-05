@@ -121,3 +121,21 @@ Isolating the two dominant semi-diurnal constituents makes the effect of nodal c
 | M2 + S2 only | ~2–4 | ~6–9 |
 
 > Exact values are printed to the terminal when the script is run, as they depend on the nodal correction factors evaluated for January 2020 at latitude −50°.
+
+## Notes on Conventions
+
+When comparing or converting between the two libraries, keep the following in mind:
+
+- **Phase convention**: utide uses Greenwich phase lags (degrees), which express the phase of the constituent relative to the Greenwich meridian. uptide accepts local phases in radians at the initial time. Converting between them requires accounting for the astronomical argument `V₀ + u` at the reference epoch.
+- **Nodal corrections**: utide modulates each constituent's amplitude and phase using time- and latitude-dependent factors `f` (amplitude correction) and `u` (phase correction). uptide does not apply these corrections; the input amplitudes and phases are used as-is. This is the primary source of discrepancy between the two predictions.
+- **Time input**: utide accepts Python `datetime` objects (converted internally to Gregorian datenums). uptide requires elapsed seconds from a user-specified reference datetime set via `set_initial_time()`.
+- **Latitude**: utide requires a latitude for computing nodal corrections. For the Patagonia site, `lat = −50°` is used.
+
+## License
+
+This project is released under the [MIT License](https://opensource.org/licenses/MIT).
+
+## References
+
+- Codiga, D.L. (2011). *Unified Tidal Analysis and Prediction Using the UTide Matlab Functions*. Technical Report 2011-01. Graduate School of Oceanography, University of Rhode Island.
+- Kráál, S. *uptide* Python package. Available at: https://github.com/stephankraabel/uptide
