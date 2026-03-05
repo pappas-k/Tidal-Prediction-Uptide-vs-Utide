@@ -50,3 +50,13 @@ Because of these differences, predictions from the two libraries given the same 
 ### Study Site
 
 Constituent data were extracted from a macro-tidal location in **Patagonia, Argentina** (approximate latitude −50°). The site is dominated by the M2 semi-diurnal constituent (amplitude ≈ 2.86 m), making it a demanding test case for tidal prediction software. Predictions span **January 2020** at a 10-minute interval.
+
+## Repository Structure
+
+```
+.
+├── uptide_vs_utide.py              # Main comparison script
+├── comparison_full_constituents.png  # Figure: all 14 constituents
+├── comparison_m2s2_only.png          # Figure: M2 + S2 only
+└── README.md
+```
