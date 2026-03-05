@@ -26,11 +26,11 @@ where `σ_i` is the angular frequency, `V_i` is the astronomical argument, and `
 
 ### utide
 
-[utide](https://github.com/westernmagic/utide) is a Python port of the MATLAB UTide toolbox (Codiga, 2011). It provides a full harmonic analysis and reconstruction workflow with built-in support for nodal corrections, Greenwich phase conventions, and confidence-interval estimation. It expects time as **matplotlib datenums** and phases as **Greenwich phase lags in degrees**.
+[utide]([https://github.com/wesleybowman/UTide]) is a Python port of the MATLAB UTide toolbox. It provides a full harmonic analysis and reconstruction workflow with built-in support for nodal corrections, Greenwich phase conventions, and confidence-interval estimation. It expects time as **matplotlib datenums** and phases as **Greenwich phase lags in degrees**.
 
 ### uptide
 
-[uptide](https://github.com/stephankraabel/uptide) is a lightweight Python library designed for straightforward tidal prediction in ocean modelling workflows. It expects elapsed time in **seconds from a user-defined reference epoch** and phases in **radians**, interpreted as local phases at *t = 0*, without applying nodal corrections.
+[uptide]([https://github.com/stephankramer/uptide]) is a lightweight Python library designed for straightforward tidal prediction in ocean modelling workflows. It expects elapsed time in **seconds from a user-defined reference epoch** and phases in **radians**, interpreted as local phases at *t = 0*, without applying nodal corrections.
 
 ### Key Differences
 
